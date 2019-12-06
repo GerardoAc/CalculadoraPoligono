@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Poligono
 {
-    public partial class Form1 : Form
+    public partial class Poligonos : Form
     {
-        public Form1()
+        public Poligonos()
         {
             InitializeComponent();
+        }
+
+        private void Poligonos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Poligono
 {
-    partial class Form1
+    partial class Poligonos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -128,7 +128,7 @@
             this.calcularAreaBtn.Text = "Calcular Area";
             this.calcularAreaBtn.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Poligonos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,8 +138,9 @@
             this.Controls.Add(this.calcularPerimetroBtn);
             this.Controls.Add(this.figurasTabControl);
             this.Controls.Add(this.tituloLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Poligonos";
+            this.Text = "Calculadora de Poligonos";
+            this.Load += new System.EventHandler(this.Poligonos_Load);
             this.figurasTabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
