@@ -3,22 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Poligono
+namespace UNA.Poligonos
 {
     public class Rectángulo : Figura
     {
-        double lado1Rectangulo;
-        double lado2Rectangulo;
+       
         public override double CalcularArea()
         {
-            double areaRectangulo = lado1Rectangulo * lado2Rectangulo;
+           double areaRectangulo = lado1Rectangulo * lado2Rectangulo;
             return areaRectangulo;
             throw new NotImplementedException();
         }
-
+        public Double lado1Rectangulo
+        {
+            get;
+            set;
+        }
+        public Double lado2Rectangulo
+        {
+            get;
+            set;
+        }
         public override double CalcularPerimetro()
         {
-            Double perimetroRectangulo = 2*(lado1Rectangulo + lado2Rectangulo);
+           Double perimetroRectangulo = 2*(lado1Rectangulo + lado2Rectangulo);
             return perimetroRectangulo;
             throw new NotImplementedException();
         }

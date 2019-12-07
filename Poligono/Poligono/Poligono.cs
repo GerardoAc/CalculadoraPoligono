@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UNA.Poligonos;
 
 namespace Poligono
 {
@@ -24,8 +25,9 @@ namespace Poligono
 
         private void calcularPerimetroBtn_Click(object sender, EventArgs e)
         {
-            Cuadrado cuadrado = new Cuadrado();
-            cuadrado.ValorLadoCuadadro(CuadradoLadoLabel.Text);
+            Figura cuadrado = new Cuadrado();
+             
+            cuadrado.CalcularPerimetro();
             cuadrado.CalcularPerimetro();
             ResultadoPerimetroLabel.Text = cuadrado.CalcularPerimetro().ToString();
            

@@ -3,15 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Poligono
+namespace UNA.Poligonos
 {
     public class Triangulo : Figura
     {
-        double lado1Triangulo;
-        double lado2Triangulo;
-        double lado3Triangulo;
-        double baseTriangulo;
-        double alturaTriangulo;
+    
+        public Double baseTriangulo
+        {
+            get;
+            set;
+        }
+        public Double alturaTriangulo
+        {
+            get;
+            set;
+        }
+
+        public Double lado1Triangulo {
+            get;
+            set;
+        }
+        public Double lado2Triangulo
+        {
+            get;
+            set;
+        }
+        public Double lado3Triangulo
+        {
+            get;
+            set;
+        }
+
+
+
         public Triangulo()
         {
             throw new System.NotImplementedException();

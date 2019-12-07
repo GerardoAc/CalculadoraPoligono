@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Poligono
+namespace UNA.Poligonos
 {
     public class Circulo : Figura
     {
        
-        double radioCirculo;
+ 
         public Circulo()
         {
             throw new System.NotImplementedException();
+        }
+        public Double radioCirculo
+        {
+            get;
+            set;
         }
 
         public override double CalcularArea()

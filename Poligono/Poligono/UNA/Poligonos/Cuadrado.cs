@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Poligono
+namespace UNA.Poligonos
 {
     public class Cuadrado : Figura
     {
-        double ladoCuadrado;
+
         public override double CalcularArea()
         {
             throw new NotImplementedException();
 
+        }
+        public Double ladoCuadrado
+        {
+            get;
+            set;
         }
 
         public override double CalcularPerimetro()
         {
             double perimetro=ladoCuadrado + ladoCuadrado + ladoCuadrado + ladoCuadrado;
             return perimetro;
-            throw new NotImplementedException();
         }
         public void ValorLadoCuadadro(string valorLado) {
             

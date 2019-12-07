@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Poligono
+namespace UNA.Poligonos
 {
     public abstract class Figura
     {
