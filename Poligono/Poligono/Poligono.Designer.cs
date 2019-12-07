@@ -32,12 +32,22 @@
             this.figurasTabControl = new System.Windows.Forms.TabControl();
             this.trianguloTabPage = new System.Windows.Forms.TabPage();
             this.cuadradoTabPage = new System.Windows.Forms.TabPage();
+            this.ResultadoPerimetroLabel = new System.Windows.Forms.Label();
+            this.txtLadoCuadrado = new System.Windows.Forms.TextBox();
             this.circuloTabPage = new System.Windows.Forms.TabPage();
             this.rectanguloTabPage = new System.Windows.Forms.TabPage();
             this.pentagonoTabPage = new System.Windows.Forms.TabPage();
             this.calcularPerimetroBtn = new System.Windows.Forms.Button();
             this.calcularAreaBtn = new System.Windows.Forms.Button();
+            this.trianguloLado1Label = new System.Windows.Forms.Label();
+            this.trianguloLado1Labe = new System.Windows.Forms.Label();
+            this.trianguloLado3Labe = new System.Windows.Forms.Label();
+            this.TrianguloTxtLado1 = new System.Windows.Forms.TextBox();
+            this.TrianguloTxtLado2 = new System.Windows.Forms.TextBox();
+            this.TrianguloTxtLado3 = new System.Windows.Forms.TextBox();
             this.figurasTabControl.SuspendLayout();
+            this.trianguloTabPage.SuspendLayout();
+            this.cuadradoTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // tituloLabel
@@ -66,6 +76,12 @@
             // 
             // trianguloTabPage
             // 
+            this.trianguloTabPage.Controls.Add(this.TrianguloTxtLado3);
+            this.trianguloTabPage.Controls.Add(this.TrianguloTxtLado2);
+            this.trianguloTabPage.Controls.Add(this.TrianguloTxtLado1);
+            this.trianguloTabPage.Controls.Add(this.trianguloLado3Labe);
+            this.trianguloTabPage.Controls.Add(this.trianguloLado1Labe);
+            this.trianguloTabPage.Controls.Add(this.trianguloLado1Label);
             this.trianguloTabPage.Location = new System.Drawing.Point(4, 22);
             this.trianguloTabPage.Name = "trianguloTabPage";
             this.trianguloTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -76,12 +92,31 @@
             // 
             // cuadradoTabPage
             // 
+            this.cuadradoTabPage.Controls.Add(this.ResultadoPerimetroLabel);
+            this.cuadradoTabPage.Controls.Add(this.txtLadoCuadrado);
             this.cuadradoTabPage.Location = new System.Drawing.Point(4, 22);
             this.cuadradoTabPage.Name = "cuadradoTabPage";
             this.cuadradoTabPage.Size = new System.Drawing.Size(778, 288);
             this.cuadradoTabPage.TabIndex = 1;
             this.cuadradoTabPage.Text = "Cuadrado";
             this.cuadradoTabPage.UseVisualStyleBackColor = true;
+            // 
+            // ResultadoPerimetroLabel
+            // 
+            this.ResultadoPerimetroLabel.AutoSize = true;
+            this.ResultadoPerimetroLabel.Location = new System.Drawing.Point(533, 175);
+            this.ResultadoPerimetroLabel.Name = "ResultadoPerimetroLabel";
+            this.ResultadoPerimetroLabel.Size = new System.Drawing.Size(35, 13);
+            this.ResultadoPerimetroLabel.TabIndex = 1;
+            this.ResultadoPerimetroLabel.Text = "label1";
+            // 
+            // txtLadoCuadrado
+            // 
+            this.txtLadoCuadrado.Location = new System.Drawing.Point(37, 27);
+            this.txtLadoCuadrado.Name = "txtLadoCuadrado";
+            this.txtLadoCuadrado.Size = new System.Drawing.Size(160, 20);
+            this.txtLadoCuadrado.TabIndex = 0;
+            this.txtLadoCuadrado.Text = "Valor Lado";
             // 
             // circuloTabPage
             // 
@@ -118,6 +153,7 @@
             this.calcularPerimetroBtn.TabIndex = 2;
             this.calcularPerimetroBtn.Text = "Calcular Perimetro";
             this.calcularPerimetroBtn.UseVisualStyleBackColor = true;
+            this.calcularPerimetroBtn.Click += new System.EventHandler(this.calcularPerimetroBtn_Click);
             // 
             // calcularAreaBtn
             // 
@@ -127,6 +163,54 @@
             this.calcularAreaBtn.TabIndex = 3;
             this.calcularAreaBtn.Text = "Calcular Area";
             this.calcularAreaBtn.UseVisualStyleBackColor = true;
+            // 
+            // trianguloLado1Label
+            // 
+            this.trianguloLado1Label.AutoSize = true;
+            this.trianguloLado1Label.Location = new System.Drawing.Point(19, 63);
+            this.trianguloLado1Label.Name = "trianguloLado1Label";
+            this.trianguloLado1Label.Size = new System.Drawing.Size(37, 13);
+            this.trianguloLado1Label.TabIndex = 0;
+            this.trianguloLado1Label.Text = "Lado1";
+            // 
+            // trianguloLado1Labe
+            // 
+            this.trianguloLado1Labe.AutoSize = true;
+            this.trianguloLado1Labe.Location = new System.Drawing.Point(19, 96);
+            this.trianguloLado1Labe.Name = "trianguloLado1Labe";
+            this.trianguloLado1Labe.Size = new System.Drawing.Size(37, 13);
+            this.trianguloLado1Labe.TabIndex = 1;
+            this.trianguloLado1Labe.Text = "Lado2";
+            // 
+            // trianguloLado3Labe
+            // 
+            this.trianguloLado3Labe.AutoSize = true;
+            this.trianguloLado3Labe.Location = new System.Drawing.Point(19, 128);
+            this.trianguloLado3Labe.Name = "trianguloLado3Labe";
+            this.trianguloLado3Labe.Size = new System.Drawing.Size(37, 13);
+            this.trianguloLado3Labe.TabIndex = 2;
+            this.trianguloLado3Labe.Text = "Lado3";
+            // 
+            // TrianguloTxtLado1
+            // 
+            this.TrianguloTxtLado1.Location = new System.Drawing.Point(79, 56);
+            this.TrianguloTxtLado1.Name = "TrianguloTxtLado1";
+            this.TrianguloTxtLado1.Size = new System.Drawing.Size(100, 20);
+            this.TrianguloTxtLado1.TabIndex = 3;
+            // 
+            // TrianguloTxtLado2
+            // 
+            this.TrianguloTxtLado2.Location = new System.Drawing.Point(79, 96);
+            this.TrianguloTxtLado2.Name = "TrianguloTxtLado2";
+            this.TrianguloTxtLado2.Size = new System.Drawing.Size(100, 20);
+            this.TrianguloTxtLado2.TabIndex = 4;
+            // 
+            // TrianguloTxtLado3
+            // 
+            this.TrianguloTxtLado3.Location = new System.Drawing.Point(79, 128);
+            this.TrianguloTxtLado3.Name = "TrianguloTxtLado3";
+            this.TrianguloTxtLado3.Size = new System.Drawing.Size(100, 20);
+            this.TrianguloTxtLado3.TabIndex = 5;
             // 
             // Poligonos
             // 
@@ -142,6 +226,10 @@
             this.Text = "Calculadora de Poligonos";
             this.Load += new System.EventHandler(this.Poligonos_Load);
             this.figurasTabControl.ResumeLayout(false);
+            this.trianguloTabPage.ResumeLayout(false);
+            this.trianguloTabPage.PerformLayout();
+            this.cuadradoTabPage.ResumeLayout(false);
+            this.cuadradoTabPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +246,14 @@
         private System.Windows.Forms.TabPage pentagonoTabPage;
         private System.Windows.Forms.Button calcularPerimetroBtn;
         private System.Windows.Forms.Button calcularAreaBtn;
+        private System.Windows.Forms.TextBox txtLadoCuadrado;
+        private System.Windows.Forms.Label ResultadoPerimetroLabel;
+        private System.Windows.Forms.TextBox TrianguloTxtLado3;
+        private System.Windows.Forms.TextBox TrianguloTxtLado2;
+        private System.Windows.Forms.TextBox TrianguloTxtLado1;
+        private System.Windows.Forms.Label trianguloLado3Labe;
+        private System.Windows.Forms.Label trianguloLado1Labe;
+        private System.Windows.Forms.Label trianguloLado1Label;
     }
 }
 

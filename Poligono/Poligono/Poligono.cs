@@ -21,5 +21,17 @@ namespace Poligono
         {
 
         }
+
+        private void calcularPerimetroBtn_Click(object sender, EventArgs e)
+        {
+            Cuadrado cuadrado = new Cuadrado();
+            cuadrado.ValorLadoCuadadro(txtLadoCuadrado.Text);
+            cuadrado.CalcularPerimetro();
+            ResultadoPerimetroLabel.Text = cuadrado.CalcularPerimetro().ToString();
+
+
+
+
+        }
     }
 }
