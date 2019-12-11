@@ -11,9 +11,9 @@ namespace UNA.Poligonos
  
         public Circulo()
         {
-            throw new System.NotImplementedException();
+          //  throw new System.NotImplementedException();
         }
-        public Double radioCirculo
+        public Double radio
         {
             get;
             set;
@@ -21,20 +21,20 @@ namespace UNA.Poligonos
 
         public override double CalcularArea()
         {
-            double areaCirculo = Math.PI* Math.Pow(radioCirculo, 2);
+            double areaCirculo = Math.PI* Math.Pow(radio, 2);
             return areaCirculo;
             throw new NotImplementedException();
         }
 
         public override double CalcularPerimetro()
         {
-            double perimetroCirculo = 2 * Math.PI * radioCirculo;
+            double perimetroCirculo = 2 * Math.PI * radio;
+            return perimetroCirculo;
 
-
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
         void setRadioCirculo(string radioCircul) {
-            radioCirculo = Convert.ToDouble(radioCircul);
+            radio = Convert.ToDouble(radioCircul);
 
         }
     }

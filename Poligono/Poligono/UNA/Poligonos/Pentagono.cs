@@ -10,15 +10,15 @@ namespace UNA.Poligonos
         
         public Pentagono()
         {
-            throw new System.NotImplementedException();
+         
         }
-        public Double ladoPentagono
+        public Double lado
         {
             get;
             set;
           
         }
-        public Double apotemaPentagono { 
+        public Double apotema{ 
             get;
             set;
         }
@@ -26,14 +26,14 @@ namespace UNA.Poligonos
         public override double CalcularArea()
         {
             Double area;
-             area=((ladoPentagono*5)*apotemaPentagono)/ 2;
+             area=((lado*5)*apotema)/ 2;
             return area;
             throw new NotImplementedException();
         }
 
         public override double CalcularPerimetro()
         {
-            double perimero = ladoPentagono * 5;
+            double perimero = lado * 5;
             return perimero;
             throw new NotImplementedException();
         }

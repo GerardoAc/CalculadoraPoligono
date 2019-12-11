@@ -8,27 +8,27 @@ namespace UNA.Poligonos
     public class Triangulo : Figura
     {
     
-        public Double baseTriangulo
+        public Double baseT
         {
             get;
             set;
         }
-        public Double alturaTriangulo
+        public Double altura
         {
             get;
             set;
         }
 
-        public Double lado1Triangulo {
+        public Double lado1 {
             get;
             set;
         }
-        public Double lado2Triangulo
+        public Double lado2
         {
             get;
             set;
         }
-        public Double lado3Triangulo
+        public Double lado3
         {
             get;
             set;
@@ -38,26 +38,27 @@ namespace UNA.Poligonos
 
         public Triangulo()
         {
-            throw new System.NotImplementedException();
         }
 
         public override double CalcularArea()
         {
-           double area=(baseTriangulo* alturaTriangulo)/ 2;
-            throw new NotImplementedException();
+           double areaT=(baseT* altura)/ 2;
+            return areaT;
+          throw new NotImplementedException();
         }
 
         public override double CalcularPerimetro()
         {
-            Double perimetro = lado1Triangulo + lado2Triangulo + lado3Triangulo;
+            Double perimetro = lado1 + lado2 +lado3;
+            return perimetro;
             throw new NotImplementedException();
         }
         void setDatosTriangulo(string ladoTriangulo1,string ladoTriangulo2,string ladoTriangulo3,string baseTri,string alturaTri) {
-            lado1Triangulo = Convert.ToDouble(ladoTriangulo1);
-            lado2Triangulo = Convert.ToDouble(ladoTriangulo2);
-            lado3Triangulo = Convert.ToDouble(ladoTriangulo3);
-            baseTriangulo = Convert.ToDouble(baseTri);
-            alturaTriangulo = Convert.ToDouble(alturaTri);
+            lado1 = Convert.ToDouble(ladoTriangulo1);
+            lado2 = Convert.ToDouble(ladoTriangulo2);
+            lado3 = Convert.ToDouble(ladoTriangulo3);
+            baseT= Convert.ToDouble(baseTri);
+            altura = Convert.ToDouble(alturaTri);
         }
     }
 }
